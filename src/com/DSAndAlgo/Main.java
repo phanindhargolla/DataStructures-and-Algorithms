@@ -29,6 +29,13 @@ public class Main {
         System.out.println(duplicate.duplicateSum(nums3));
         System.out.println(duplicate.duplicateXOR(nums3));
         System.out.println(duplicate.duplicateArray(nums3));
+        System.out.println();
+        int[] nums4 = { 1, 0, 1, 1, 1, 0, 0, 1 };
+        printArray(nums4);
+        BinaryArrLinear binaryArrLinear = new BinaryArrLinear();
+        printArray(binaryArrLinear.binaryLinearBrute(nums4));
+        printArray(binaryArrLinear.binaryLinearWithoutCount(nums4));
+        printArray(binaryArrLinear.binaryLinearQuickSort(nums4));
     }
 
     public static void printArray(int[] arr){
