@@ -36,6 +36,14 @@ public class Main {
         printArray(binaryArrLinear.binaryLinearBrute(nums4));
         printArray(binaryArrLinear.binaryLinearWithoutCount(nums4));
         printArray(binaryArrLinear.binaryLinearQuickSort(nums4));
+        int[] x = { 1, 4, 7, 8, 10 };
+        int[] y = { 2, 3, 9 };
+        printArray(x);
+        printArray(y);
+        MergeTwoSortedArrays merge = new MergeTwoSortedArrays();
+        merge.mergeSortedArrays(x,y);
+        printArray(x);
+        printArray(y);
     }
 
     public static void printArray(int[] arr){
