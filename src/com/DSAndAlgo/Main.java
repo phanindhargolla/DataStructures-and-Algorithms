@@ -44,6 +44,11 @@ public class Main {
         merge.mergeSortedArrays(x,y);
         printArray(x);
         printArray(y);
+        int[] nums5= {1, 2, 3, 4, 5, 6, 7};
+        printArray(nums5);
+        AlternateHighAndLow alternateHighAndLow = new AlternateHighAndLow();
+        alternateHighAndLow.alternateHighandLowOpt(nums5);
+        printArray(nums5);
     }
 
     public static void printArray(int[] arr){
