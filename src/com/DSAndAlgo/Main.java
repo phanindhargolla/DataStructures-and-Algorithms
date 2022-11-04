@@ -49,6 +49,12 @@ public class Main {
         AlternateHighAndLow alternateHighAndLow = new AlternateHighAndLow();
         alternateHighAndLow.alternateHighandLowOpt(nums5);
         printArray(nums5);
+        int[] nums6 = { 3, 4, -7, 3, 1, 3, 1, -4, -2, -2 };
+        printArray(nums6);
+        SubArrayZeroSum subArrayZeroSum = new SubArrayZeroSum();
+        subArrayZeroSum.printAllSubArraysBrute(nums6);
+        System.out.println();
+        subArrayZeroSum.printAllSubArrays(nums6);
     }
 
     public static void printArray(int[] arr){
