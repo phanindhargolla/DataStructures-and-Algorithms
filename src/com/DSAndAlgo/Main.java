@@ -55,6 +55,9 @@ public class Main {
         subArrayZeroSum.printAllSubArraysBrute(nums6);
         System.out.println();
         subArrayZeroSum.printAllSubArrays(nums6);
+        System.out.println();
+        IdenticalTrees identicalTrees = new IdenticalTrees();
+        identicalTrees.createTree();
     }
 
     public static void printArray(int[] arr){
