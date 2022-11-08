@@ -1,5 +1,5 @@
 package com.DSAndAlgo;
-
+import java.util.*;
 import com.sun.source.doctree.SystemPropertyTree;
 
 public class Main {
@@ -58,6 +58,29 @@ public class Main {
         System.out.println();
         IdenticalTrees identicalTrees = new IdenticalTrees();
         identicalTrees.createTree();
+        int[] nums7 = {9,7,3,1,6,4,8};
+        printArray(nums7);
+        LinearSearch linearSearch = new LinearSearch();
+        System.out.println("The given element is present at " + linearSearch.linearSearch(nums7,7));
+        //Arrays.sort(nums7);
+        printArray(nums7);
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println("The given element is present at " + linearSearch.linearSearch(nums7,7));
+        System.out.println("----------------Bubble Sort-----------------");
+        BubbleSort bubbleSort = new BubbleSort();
+        //printArray(bubbleSort.bubbleSort(nums7));
+        System.out.println("----------------Insertion Sort-----------------");
+        InsertionSort insertionSort = new InsertionSort();
+        //printArray(insertionSort.insertionSort(nums7));
+        System.out.println("----------------Selection Sort-----------------");
+        SelectionSort selectionSort = new SelectionSort();
+        //printArray(selectionSort.selectionSort(nums7));
+        System.out.println("----------------Quick Sort-----------------");
+        QuickSort quickSort = new QuickSort();
+        printArray(quickSort.quickSort(nums7,0,nums7.length - 1));
+        System.out.println("----------------Merge Sort-----------------");
+        MergeSort mergeSort = new MergeSort();
+        //printArray(mergeSort.mergeSort(nums7,0,nums7.length - 1));
     }
 
     public static void printArray(int[] arr){
